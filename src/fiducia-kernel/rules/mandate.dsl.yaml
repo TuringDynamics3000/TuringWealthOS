@@ -1,0 +1,13 @@
+# Fiducia Mandate Rule DSL
+# Rules declare constraints – never actions.
+
+rules:
+  - id: ALLOW_BUY
+    when:
+      action: BUY
+    then: PERMIT
+
+  - id: BLOCK_CONCENTRATION
+    when:
+      concentration_pct > 25
+    then: DENY
