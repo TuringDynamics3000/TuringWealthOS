@@ -1,1 +1,1 @@
-{ \"type\": \"object\", \"required\": [\"decision_id\",\"outcome\",\"decision_hash\"] }
+{ ""type"": ""object"", ""required"": [""decision_id"", ""outcome"", ""decision_hash""] }

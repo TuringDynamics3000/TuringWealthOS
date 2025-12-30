@@ -1,1 +1,1 @@
-{ \"type\": \"object\", \"required\": [\"evidence_id\",\"evidence_hash\"] }
+{ ""type"": ""object"", ""required"": [""evidence_id"", ""evidence_hash""] }

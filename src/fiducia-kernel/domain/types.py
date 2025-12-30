@@ -1,9 +1,7 @@
-# Fiducia Kernel – Domain Types (Authoritative)
-
 from dataclasses import dataclass
-from typing import List
 from uuid import UUID
 from datetime import datetime
+from typing import List, Dict
 
 @dataclass(frozen=True)
 class Mandate:
@@ -16,7 +14,9 @@ class Mandate:
 class AuthorityDecision:
     decision_id: UUID
     mandate_id: UUID
+    mandate_version: int
     outcome: str
+    reasons: List[Dict[str, str]]
     decision_hash: str
 
 @dataclass(frozen=True)

@@ -1,1 +1,1 @@
-{ \"type\": \"object\", \"required\": [\"mandate_id\",\"version\",\"compiled_hash\"] }
+{ ""type"": ""object"", ""required"": [""mandate_id"", ""version"", ""compiled_hash""] }
