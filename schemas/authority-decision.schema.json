@@ -1,0 +1,20 @@
+{
+  ""type"": ""object"",
+  ""required"": [""decision_id"", ""mandate_id"", ""outcome"", ""decision_hash""],
+  ""properties"": {
+    ""decision_id"": { ""type"": ""string"", ""format"": ""uuid"" },
+    ""mandate_id"": { ""type"": ""string"", ""format"": ""uuid"" },
+    ""outcome"": { ""enum"": [""PERMIT"", ""DENY""] },
+    ""reasons"": {
+      ""type"": ""array"",
+      ""items"": {
+        ""type"": ""object"",
+        ""properties"": {
+          ""code"": { ""type"": ""string"" },
+          ""description"": { ""type"": ""string"" }
+        }
+      }
+    },
+    ""decision_hash"": { ""type"": ""string"" }
+  }
+}

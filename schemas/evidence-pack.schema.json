@@ -1,0 +1,12 @@
+{
+  ""type"": ""object"",
+  ""required"": [""evidence_id"", ""decision_id"", ""evidence_hash""],
+  ""properties"": {
+    ""evidence_id"": { ""type"": ""string"", ""format"": ""uuid"" },
+    ""decision_id"": { ""type"": ""string"", ""format"": ""uuid"" },
+    ""mandate_snapshot"": { ""type"": ""object"" },
+    ""decision_snapshot"": { ""type"": ""object"" },
+    ""ruleset_id"": { ""type"": ""string"", ""format"": ""uuid"" },
+    ""evidence_hash"": { ""type"": ""string"" }
+  }
+}

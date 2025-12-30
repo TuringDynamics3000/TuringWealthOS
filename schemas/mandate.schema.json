@@ -1,0 +1,25 @@
+{
+  ""type"": ""object"",
+  ""required"": [""mandate_id"", ""version"", ""status"", ""subject"", ""constraints"", ""compiled_hash""],
+  ""properties"": {
+    ""mandate_id"": { ""type"": ""string"", ""format"": ""uuid"" },
+    ""version"": { ""type"": ""integer"" },
+    ""status"": { ""enum"": [""ACTIVE"", ""SUSPENDED"", ""REVOKED""] },
+    ""subject"": {
+      ""type"": ""object"",
+      ""properties"": {
+        ""account_id"": { ""type"": ""string"", ""format"": ""uuid"" },
+        ""client_id"": { ""type"": ""string"", ""format"": ""uuid"" },
+        ""jurisdiction"": { ""type"": ""string"" }
+      }
+    },
+    ""constraints"": {
+      ""type"": ""object"",
+      ""properties"": {
+        ""allowed_actions"": { ""type"": ""array"", ""items"": { ""type"": ""string"" } },
+        ""prohibited_assets"": { ""type"": ""array"", ""items"": { ""type"": ""string"" } }
+      }
+    },
+    ""compiled_hash"": { ""type"": ""string"" }
+  }
+}
