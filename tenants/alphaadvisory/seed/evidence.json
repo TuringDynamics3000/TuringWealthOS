@@ -1,0 +1,48 @@
+{
+  "evidence": [
+    {
+      "capturedByUserId": "USR-PARA-001",
+      "createdAt": "2026-01-06T00:00:00Z",
+      "kind": "Consent",
+      "linked": {
+        "adviceFileIds": [
+          "AF-001",
+          "AF-002"
+        ],
+        "clientId": "CL-001"
+      },
+      "filename": "consent.pdf",
+      "source": "upload",
+      "evidenceId": "EV-001"
+    },
+    {
+      "capturedByUserId": "USR-PARA-001",
+      "createdAt": "2026-01-06T00:00:00Z",
+      "kind": "Document",
+      "linked": {
+        "adviceFileIds": [
+          "AF-002"
+        ],
+        "clientId": "CL-001"
+      },
+      "filename": "portfolio_statement.pdf",
+      "source": "upload",
+      "evidenceId": "EV-002"
+    },
+    {
+      "capturedByUserId": "USR-PARA-002",
+      "createdAt": "2026-01-06T00:00:00Z",
+      "kind": "Document",
+      "linked": {
+        "groupId": "GRP-001",
+        "clientId": "CL-004",
+        "adviceFileIds": [
+          "AF-004"
+        ]
+      },
+      "filename": "group_structure.pdf",
+      "source": "upload",
+      "evidenceId": "EV-003"
+    }
+  ]
+}

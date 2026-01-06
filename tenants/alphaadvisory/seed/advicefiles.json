@@ -1,0 +1,59 @@
+{
+  "adviceFiles": [
+    {
+      "assignedPreparerId": "USR-PARA-001",
+      "householdId": "HH-001",
+      "status": "Draft",
+      "adviceFileId": "AF-001",
+      "groupId": null,
+      "clientId": "CL-001",
+      "type": "Review",
+      "assignedAdviserId": "USR-ADV-001",
+      "dueDate": "2026-01-20T00:00:00Z"
+    },
+    {
+      "assignedPreparerId": "USR-PARA-001",
+      "householdId": "HH-001",
+      "status": "Reviewed",
+      "adviceFileId": "AF-002",
+      "groupId": null,
+      "clientId": "CL-001",
+      "type": "ROA",
+      "assignedAdviserId": "USR-ADV-001",
+      "dueDate": "2026-01-14T00:00:00Z"
+    },
+    {
+      "assignedPreparerId": "USR-PARA-002",
+      "householdId": "HH-002",
+      "status": "Authorised",
+      "adviceFileId": "AF-003",
+      "groupId": null,
+      "clientId": "CL-002",
+      "type": "SOA",
+      "assignedAdviserId": "USR-ADV-002",
+      "dueDate": "2026-01-10T00:00:00Z"
+    },
+    {
+      "assignedPreparerId": "USR-PARA-002",
+      "householdId": "HH-004",
+      "status": "Issued",
+      "adviceFileId": "AF-004",
+      "groupId": "GRP-001",
+      "clientId": "CL-004",
+      "type": "Review",
+      "assignedAdviserId": "USR-ADV-002",
+      "dueDate": "2026-01-05T00:00:00Z"
+    },
+    {
+      "assignedPreparerId": "USR-PARA-001",
+      "householdId": "HH-003",
+      "status": "Draft",
+      "adviceFileId": "AF-005",
+      "groupId": "GRP-002",
+      "clientId": "CL-003",
+      "type": "ROA",
+      "assignedAdviserId": "USR-ADV-001",
+      "dueDate": "2026-01-25T00:00:00Z"
+    }
+  ]
+}

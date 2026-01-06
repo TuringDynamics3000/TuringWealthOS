@@ -1,0 +1,13 @@
+{
+  "forbidden_terms": [
+    "recommend",
+    "recommended",
+    "recommendation",
+    "optimal",
+    "best option",
+    "we advise",
+    "ai suggests",
+    "our advice"
+  ],
+  "scope": ["src", "tenants", "docs"]
+}

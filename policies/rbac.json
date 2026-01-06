@@ -1,0 +1,5 @@
+{
+  "Adviser": ["Prepare", "Authorise"],
+  "Paraplanner": ["Prepare"],
+  "Compliance": ["Audit"]
+}

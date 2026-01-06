@@ -1,0 +1,66 @@
+{
+  "ui_defaults": {
+    "groups_module_enabled": true,
+    "household_always_present": true,
+    "groups_workspace_visible_only_if_groupId_exists": true
+  },
+  "created_utc": "2026-01-06T18:43:06Z",
+  "permissions": {
+    "roles": {
+      "Admin": [
+        "Prepare",
+        "Authorise",
+        "Issue",
+        "Audit",
+        "GenerateAuditPack",
+        "VerifyNotary",
+        "CreateAdviceFile"
+      ],
+      "Paraplanner": [
+        "Prepare"
+      ],
+      "Compliance": [
+        "Audit",
+        "GenerateAuditPack",
+        "VerifyNotary"
+      ],
+      "Adviser": [
+        "Prepare",
+        "Authorise",
+        "Issue",
+        "CreateAdviceFile"
+      ],
+      "Principal": []
+    },
+    "actions": [
+      "Prepare",
+      "Authorise",
+      "Issue",
+      "Audit",
+      "GenerateAuditPack",
+      "VerifyNotary",
+      "CreateAdviceFile"
+    ]
+  },
+  "tenant_type": "advisor_practice",
+  "terminology": {
+    "advice_file_types": {
+      "ROA": "Record of Advice",
+      "SOA": "Statement of Advice",
+      "Other": "Advice File",
+      "Review": "Review"
+    }
+  },
+  "tenant_id": "alphaadvisory",
+  "slas": {
+    "reviewed_to_authorised_days": 3,
+    "draft_to_review_days": 7,
+    "authorised_to_issued_days": 2
+  },
+  "branding": {
+    "logo_path": "tenants/alphaadvisory/brand/logo.svg",
+    "accent_hex": "#1F4B99",
+    "display_name": "AlphaAdvisory Co"
+  },
+  "tenant_name": "AlphaAdvisory Co"
+}
