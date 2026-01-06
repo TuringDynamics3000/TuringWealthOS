@@ -1,0 +1,33 @@
+﻿{
+    "transitions":  [
+                        {
+                            "from":  "Draft",
+                            "to":  "Reviewed",
+                            "requires":  [
+                                             "facts_complete",
+                                             "consent_present"
+                                         ]
+                        },
+                        {
+                            "from":  "Reviewed",
+                            "to":  "Authorised",
+                            "requires":  [
+                                             "adviser_signature",
+                                             "decision_log_complete"
+                                         ]
+                        },
+                        {
+                            "from":  "Authorised",
+                            "to":  "Issued",
+                            "requires":  [
+                                             "artefact_generated"
+                                         ]
+                        }
+                    ],
+    "states":  [
+                   "Draft",
+                   "Reviewed",
+                   "Authorised",
+                   "Issued"
+               ]
+}

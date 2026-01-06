@@ -1,0 +1,12 @@
+﻿{
+    "type":  "DecisionEvent",
+    "required":  [
+                     "eventId",
+                     "adviserId",
+                     "label",
+                     "rationale",
+                     "evidenceRefs",
+                     "timestamp",
+                     "immutableHash"
+                 ]
+}

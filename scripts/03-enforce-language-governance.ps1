@@ -21,9 +21,7 @@ Write-Host "Scanning for forbidden advisory language..."
 
 foreach ($path in $paths) {
     if (Test-Path $path) {
-
         Get-ChildItem -Path $path -Recurse -File | ForEach-Object {
-
             $matches = Select-String `
                 -Path $_.FullName `
                 -Pattern $forbidden `
@@ -31,15 +29,12 @@ foreach ($path in $paths) {
                 -CaseSensitive:$false `
                 -ErrorAction SilentlyContinue
 
-            if ($matches) {
-                $violations += $matches
-            }
+            if ($matches) { $violations += $matches }
         }
     }
 }
 
 if ($violations.Count -gt 0) {
-
     Write-Host ""
     Write-Host "❌ Advisory language violations detected:"
     Write-Host ""
