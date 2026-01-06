@@ -1,44 +1,44 @@
 {
   "clients": [
     {
-      "assignedAdviserId": "USR-ADV-001",
       "classification": "retail",
+      "groupId": null,
+      "assignedAdviserId": "USR-ADV-001",
       "clientId": "CL-001",
-      "displayName": "Alex Morgan",
       "householdId": "HH-001",
-      "groupId": null
+      "displayName": "Alex Morgan"
     },
     {
-      "assignedAdviserId": "USR-ADV-002",
       "classification": "retail",
+      "groupId": null,
+      "assignedAdviserId": "USR-ADV-002",
       "clientId": "CL-002",
-      "displayName": "Priya Singh",
       "householdId": "HH-002",
-      "groupId": null
+      "displayName": "Priya Singh"
     },
     {
-      "assignedAdviserId": "USR-ADV-001",
       "classification": "wholesale",
+      "groupId": "GRP-002",
+      "assignedAdviserId": "USR-ADV-001",
       "clientId": "CL-003",
-      "displayName": "Wei Chen",
       "householdId": "HH-003",
-      "groupId": "GRP-002"
+      "displayName": "Wei Chen"
     },
     {
-      "assignedAdviserId": "USR-ADV-002",
       "classification": "wholesale",
+      "groupId": "GRP-001",
+      "assignedAdviserId": "USR-ADV-002",
       "clientId": "CL-004",
-      "displayName": "Jordan Harper",
       "householdId": "HH-004",
-      "groupId": "GRP-001"
+      "displayName": "Jordan Harper"
     },
     {
-      "assignedAdviserId": "USR-ADV-001",
       "classification": "retail",
+      "groupId": null,
+      "assignedAdviserId": "USR-ADV-001",
       "clientId": "CL-005",
-      "displayName": "Single Client",
       "householdId": "HH-005",
-      "groupId": null
+      "displayName": "Single Client"
     }
   ]
 }

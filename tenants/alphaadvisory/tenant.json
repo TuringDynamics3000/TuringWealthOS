@@ -1,24 +1,21 @@
 {
-  "ui_defaults": {
-    "groups_module_enabled": true,
-    "household_always_present": true,
-    "groups_workspace_visible_only_if_groupId_exists": true
+  "terminology": {
+    "advice_file_types": {
+      "Other": "Advice File",
+      "Review": "Review",
+      "ROA": "Record of Advice",
+      "SOA": "Statement of Advice"
+    }
   },
-  "created_utc": "2026-01-06T18:43:06Z",
+  "tenant_id": "alphaadvisory",
+  "ui_defaults": {
+    "groups_workspace_visible_only_if_groupId_exists": true,
+    "groups_module_enabled": true,
+    "household_always_present": true
+  },
   "permissions": {
     "roles": {
-      "Admin": [
-        "Prepare",
-        "Authorise",
-        "Issue",
-        "Audit",
-        "GenerateAuditPack",
-        "VerifyNotary",
-        "CreateAdviceFile"
-      ],
-      "Paraplanner": [
-        "Prepare"
-      ],
+      "Principal": [],
       "Compliance": [
         "Audit",
         "GenerateAuditPack",
@@ -30,7 +27,18 @@
         "Issue",
         "CreateAdviceFile"
       ],
-      "Principal": []
+      "Paraplanner": [
+        "Prepare"
+      ],
+      "Admin": [
+        "Prepare",
+        "Authorise",
+        "Issue",
+        "Audit",
+        "GenerateAuditPack",
+        "VerifyNotary",
+        "CreateAdviceFile"
+      ]
     },
     "actions": [
       "Prepare",
@@ -43,24 +51,16 @@
     ]
   },
   "tenant_type": "advisor_practice",
-  "terminology": {
-    "advice_file_types": {
-      "ROA": "Record of Advice",
-      "SOA": "Statement of Advice",
-      "Other": "Advice File",
-      "Review": "Review"
-    }
-  },
-  "tenant_id": "alphaadvisory",
-  "slas": {
-    "reviewed_to_authorised_days": 3,
-    "draft_to_review_days": 7,
-    "authorised_to_issued_days": 2
-  },
+  "tenant_name": "AlphaAdvisory Co",
+  "created_utc": "2026-01-06T18:58:33Z",
   "branding": {
-    "logo_path": "tenants/alphaadvisory/brand/logo.svg",
+    "display_name": "AlphaAdvisory Co",
     "accent_hex": "#1F4B99",
-    "display_name": "AlphaAdvisory Co"
+    "logo_path": "tenants/alphaadvisory/brand/logo.svg"
   },
-  "tenant_name": "AlphaAdvisory Co"
+  "slas": {
+    "draft_to_review_days": 7,
+    "reviewed_to_authorised_days": 3,
+    "authorised_to_issued_days": 2
+  }
 }

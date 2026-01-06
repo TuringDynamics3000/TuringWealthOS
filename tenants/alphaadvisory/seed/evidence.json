@@ -1,48 +1,48 @@
 {
   "evidence": [
     {
-      "capturedByUserId": "USR-PARA-001",
-      "createdAt": "2026-01-06T00:00:00Z",
+      "evidenceId": "EV-001",
       "kind": "Consent",
+      "source": "upload",
+      "filename": "consent.pdf",
+      "createdAt": "2026-01-06T00:00:00Z",
       "linked": {
+        "clientId": "CL-001",
         "adviceFileIds": [
           "AF-001",
           "AF-002"
-        ],
-        "clientId": "CL-001"
-      },
-      "filename": "consent.pdf",
-      "source": "upload",
-      "evidenceId": "EV-001"
-    },
-    {
-      "capturedByUserId": "USR-PARA-001",
-      "createdAt": "2026-01-06T00:00:00Z",
-      "kind": "Document",
-      "linked": {
-        "adviceFileIds": [
-          "AF-002"
-        ],
-        "clientId": "CL-001"
-      },
-      "filename": "portfolio_statement.pdf",
-      "source": "upload",
-      "evidenceId": "EV-002"
-    },
-    {
-      "capturedByUserId": "USR-PARA-002",
-      "createdAt": "2026-01-06T00:00:00Z",
-      "kind": "Document",
-      "linked": {
-        "groupId": "GRP-001",
-        "clientId": "CL-004",
-        "adviceFileIds": [
-          "AF-004"
         ]
       },
-      "filename": "group_structure.pdf",
+      "capturedByUserId": "USR-PARA-001"
+    },
+    {
+      "evidenceId": "EV-002",
+      "kind": "Document",
       "source": "upload",
-      "evidenceId": "EV-003"
+      "filename": "portfolio_statement.pdf",
+      "createdAt": "2026-01-06T00:00:00Z",
+      "linked": {
+        "clientId": "CL-001",
+        "adviceFileIds": [
+          "AF-002"
+        ]
+      },
+      "capturedByUserId": "USR-PARA-001"
+    },
+    {
+      "evidenceId": "EV-003",
+      "kind": "Document",
+      "source": "upload",
+      "filename": "group_structure.pdf",
+      "createdAt": "2026-01-06T00:00:00Z",
+      "linked": {
+        "adviceFileIds": [
+          "AF-004"
+        ],
+        "groupId": "GRP-001",
+        "clientId": "CL-004"
+      },
+      "capturedByUserId": "USR-PARA-002"
     }
   ]
 }

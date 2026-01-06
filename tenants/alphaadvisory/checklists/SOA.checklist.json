@@ -1,26 +1,26 @@
 {
+  "applies_to": "SOA",
   "template_id": "alpha_soa_v1",
   "required_evidence": [
     {
+      "key": "consent_present",
       "label": "Client consent recorded",
-      "required": true,
-      "key": "consent_present"
+      "required": true
     },
     {
+      "key": "fact_find",
       "label": "Fact find captured",
-      "required": true,
-      "key": "fact_find"
+      "required": true
     },
     {
+      "key": "risk_profile",
       "label": "Risk profile evidence",
-      "required": true,
-      "key": "risk_profile"
+      "required": true
     },
     {
+      "key": "disclosures",
       "label": "Disclosures acknowledged",
-      "required": true,
-      "key": "disclosures"
+      "required": true
     }
-  ],
-  "applies_to": "SOA"
+  ]
 }
