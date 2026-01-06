@@ -1,115 +1,227 @@
-﻿# TuringWealthOS
+TuringWealthOS
 
-**TuringWealthOS** is a **fiduciary operating system** for regulated wealth decisions.
+Deterministic Advice Execution & Proof Infrastructure
 
-It is not a robo-advisor.
-It is not a portfolio platform.
-It is not a broker wrapper.
+TuringWealthOS is a governance-first operating system for regulated wealth advice.
+It is designed to make advice provable, replayable, and regulator-legible — not merely generated, traded, or presented.
 
-It is a **deterministic authority and proof kernel** that turns discretionary wealth actions into
-**provable, replayable, regulator-grade operations**.
+This repository contains the execution kernel that sits beneath adviser tools, portfolio engines, and client interfaces.
 
----
+What Problem This Solves
 
-## Core Insight
+Modern wealth platforms optimise for:
 
-Modern wealth systems fail not because they cannot trade, but because they cannot **prove**:
+portfolio construction
 
-- why a decision was made
-- whether it was authorised
-- whether it complied with a mandate
-- whether the evidence can be reproduced later
+transaction throughput
 
-TuringWealthOS makes **authority and evidence first-class primitives**.
+UI convenience
 
----
+They fail at the thing regulators, courts, and licensees actually care about:
 
-## Architectural Model
+Can you prove what decision was made, under which constraints, by whom, and why?
 
-    Applications / UX (non-authoritative)
-            ▲
-    Adapters (broker, custody, reporting)
-            ▲
-      Fiducia Kernel (authoritative)
+TuringWealthOS treats advice as a governed decision, not a document or recommendation.
 
-Only the **Fiducia Kernel** can authorise actions.
+Core Design Principles
+1. Advice Is a Deterministic Event
 
----
+Every advice outcome must be:
 
-## Fiducia Kernel Flow
+reproducible
 
-    Mandate → AuthorityDecision → EvidencePack → Replay → Anchor
+constrained by explicit policy
 
-Each step is:
-- deterministic
-- immutable
-- hash-addressable
-- replay-verifiable
+traceable to accountable roles
 
----
+2. Governance Is Executable
 
-## Kernel Pillars
+Rules are not PDFs or manuals.
+They are enforced as code at decision time.
 
-### Mandates
-Compiled, versioned, immutable contracts.
-No implicit discretion. No mutation.
+3. Evidence Is a First-Class Output
 
-### Authority Decisions
-Pure functions that return **PERMIT** or **DENY** with explicit reason codes.
+Every decision emits:
 
-### Evidence Packs
-Structured proof explaining *why* an outcome occurred.
-Evidence is not logging.
+inputs
 
-### Replay Verification
-Identical inputs must reproduce identical outcomes.
-Replay divergence = invalid decision.
+evaluations
 
-### Public Anchoring
-Evidence hashes are Merkle-batched and anchored to a public network
-(e.g. RedBelly) for external, time-stamped proof.
+outputs
 
----
+cryptographic hashes
 
-## Repository Structure
+4. Tenancy Is Non-Negotiable
 
-    src/fiducia-kernel/
-    schemas/
-    docs/
-    .github/
-    CONSTITUTION.md
+Each advice practice operates as an isolated tenant with:
 
----
+its own policies
 
-## What This Is Not
+its own audit trail
 
-- No portfolio optimisation
-- No asset selection
-- No market prediction
-- No CRM
-- No broker replacement
-- No UX engagement logic
+its own evidentiary artefacts
 
-Those live **outside** the kernel.
+What This Repository Contains
 
----
+This repo is not a UI and not a robo-adviser.
 
-## Determinism & Compliance
+It is the core execution and proof layer that other systems plug into.
 
-- No clocks
-- No randomness
-- No hidden state
-- Every decision emits evidence
-- Every decision is replayable
-- Evidence is externally verifiable
+Key Components
+.
+├── constitution/          # System-level invariants (cannot be bypassed)
+├── policies/              # Advice and compliance constraints
+├── tenants/               # Isolated adviser practices (e.g. AlphaAdvisory)
+├── runtime/               # Decision execution & evidence emission
+├── evidence/              # Generated decision evidence (local)
+├── audit-packs/           # Regulator-readable audit artefacts
+└── OPERATIONAL_WALKTHROUGH.md
 
-This is what regulators actually require.
+Advice Lifecycle (Explicit)
 
----
+Advice in TuringWealthOS follows a formal lifecycle:
 
-## Governance
+Draft → Reviewed → Approved → Presented → Accepted → Superseded
 
-This repository is governed by **CONSTITUTION.md**.
 
-Kernel invariants are enforced by CI.
-Violations are rejected by design.
+Transitions:
+
+are role-restricted
+
+emit evidence
+
+cannot be skipped or retroactively altered
+
+This prevents silent edits, back-dating, and undocumented overrides.
+
+Roles & Authority Model
+Role	Capabilities
+Adviser	Create AdviceFiles, submit Draft decisions
+Compliance	Review, approve, generate Audit Packs
+Admin	Full authority (logged, never implicit)
+
+Any unauthorised action hard-fails.
+
+Evidence & Audit Packs
+
+Every advice decision produces:
+
+Evidence Bundle
+/evidence/{decisionId}/
+  inputs.json
+  policy-evaluation.json
+  decision-result.json
+  hashes.json
+
+Audit Pack
+/audit-packs/{adviceFileId}/
+  manifest.json
+  decision-log.json
+  evidence-hashes.json
+  README.md
+
+
+These artefacts are designed to be:
+
+regulator-readable
+
+court-defensible
+
+externally verifiable
+
+Canonical Tenant: AlphaAdvisory
+
+AlphaAdvisory is the reference implementation of a licensed advice practice.
+
+It demonstrates:
+
+household-centric advice
+
+policy enforcement
+
+compliance separation
+
+audit-ready outputs
+
+All onboarding practices follow this model.
+
+Running Locally (Reference Execution)
+
+This repository includes a local execution walkthrough that demonstrates one complete advice event.
+
+pnpm install
+pnpm run demo:alpha
+
+
+This will:
+
+Create a Household
+
+Create an AdviceFile
+
+Submit an advice decision
+
+Evaluate applicable policies
+
+Approve the decision
+
+Generate an Audit Pack
+
+Output file paths to artefacts
+
+No cloud services required.
+
+What This Is Not
+
+❌ Not a robo-adviser
+
+❌ Not a trading system
+
+❌ Not a client-facing app
+
+❌ Not a document generator
+
+TuringWealthOS is the system of record for advice decisions.
+
+Who This Is For
+
+AFSL holders
+
+Responsible Managers
+
+Compliance teams
+
+Platform operators
+
+PE / infrastructure investors
+
+Regulated fintech builders
+
+If you are optimising for UI demos, this is the wrong repo.
+If you are optimising for regulatory survival, this is the core.
+
+Extension Points (Deliberately Out of Scope)
+
+Adviser UI
+
+Client portals
+
+Portfolio engines
+
+Brokerage integrations
+
+Blockchain anchoring
+
+These attach above this layer.
+
+Status
+
+Execution kernel in active build.
+Governance model locked.
+Runtime implementation in progress.
+
+This repo is intended to become foundational infrastructure, not a disposable prototype.
+
+License & Use
+
+Internal / restricted use pending commercial licensing.
