@@ -2,43 +2,43 @@
   "clients": [
     {
       "classification": "retail",
+      "displayName": "Alex Morgan",
       "groupId": null,
       "assignedAdviserId": "USR-ADV-001",
-      "clientId": "CL-001",
       "householdId": "HH-001",
-      "displayName": "Alex Morgan"
+      "clientId": "CL-001"
     },
     {
       "classification": "retail",
+      "displayName": "Priya Singh",
       "groupId": null,
       "assignedAdviserId": "USR-ADV-002",
-      "clientId": "CL-002",
       "householdId": "HH-002",
-      "displayName": "Priya Singh"
+      "clientId": "CL-002"
     },
     {
       "classification": "wholesale",
+      "displayName": "Wei Chen",
       "groupId": "GRP-002",
       "assignedAdviserId": "USR-ADV-001",
-      "clientId": "CL-003",
       "householdId": "HH-003",
-      "displayName": "Wei Chen"
+      "clientId": "CL-003"
     },
     {
       "classification": "wholesale",
+      "displayName": "Jordan Harper",
       "groupId": "GRP-001",
       "assignedAdviserId": "USR-ADV-002",
-      "clientId": "CL-004",
       "householdId": "HH-004",
-      "displayName": "Jordan Harper"
+      "clientId": "CL-004"
     },
     {
       "classification": "retail",
+      "displayName": "Single Client",
       "groupId": null,
       "assignedAdviserId": "USR-ADV-001",
-      "clientId": "CL-005",
       "householdId": "HH-005",
-      "displayName": "Single Client"
+      "clientId": "CL-005"
     }
   ]
 }

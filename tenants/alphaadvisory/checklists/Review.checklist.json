@@ -1,6 +1,4 @@
 {
-  "applies_to": "Review",
-  "template_id": "alpha_review_v1",
   "required_evidence": [
     {
       "key": "consent_present",
@@ -22,5 +20,7 @@
       "label": "Portfolio statement(s) attached",
       "required": true
     }
-  ]
+  ],
+  "template_id": "alpha_review_v1",
+  "applies_to": "Review"
 }

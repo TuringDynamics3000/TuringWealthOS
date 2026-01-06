@@ -2,9 +2,10 @@
   "evidence": [
     {
       "evidenceId": "EV-001",
+      "capturedByUserId": "USR-PARA-001",
       "kind": "Consent",
-      "source": "upload",
       "filename": "consent.pdf",
+      "source": "upload",
       "createdAt": "2026-01-06T00:00:00Z",
       "linked": {
         "clientId": "CL-001",
@@ -12,28 +13,28 @@
           "AF-001",
           "AF-002"
         ]
-      },
-      "capturedByUserId": "USR-PARA-001"
+      }
     },
     {
       "evidenceId": "EV-002",
+      "capturedByUserId": "USR-PARA-001",
       "kind": "Document",
-      "source": "upload",
       "filename": "portfolio_statement.pdf",
+      "source": "upload",
       "createdAt": "2026-01-06T00:00:00Z",
       "linked": {
         "clientId": "CL-001",
         "adviceFileIds": [
           "AF-002"
         ]
-      },
-      "capturedByUserId": "USR-PARA-001"
+      }
     },
     {
       "evidenceId": "EV-003",
+      "capturedByUserId": "USR-PARA-002",
       "kind": "Document",
-      "source": "upload",
       "filename": "group_structure.pdf",
+      "source": "upload",
       "createdAt": "2026-01-06T00:00:00Z",
       "linked": {
         "adviceFileIds": [
@@ -41,8 +42,7 @@
         ],
         "groupId": "GRP-001",
         "clientId": "CL-004"
-      },
-      "capturedByUserId": "USR-PARA-002"
+      }
     }
   ]
 }

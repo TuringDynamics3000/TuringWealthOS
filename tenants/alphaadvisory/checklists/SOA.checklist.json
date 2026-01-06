@@ -1,6 +1,4 @@
 {
-  "applies_to": "SOA",
-  "template_id": "alpha_soa_v1",
   "required_evidence": [
     {
       "key": "consent_present",
@@ -22,5 +20,7 @@
       "label": "Disclosures acknowledged",
       "required": true
     }
-  ]
+  ],
+  "template_id": "alpha_soa_v1",
+  "applies_to": "SOA"
 }

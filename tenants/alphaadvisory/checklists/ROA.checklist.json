@@ -1,6 +1,4 @@
 {
-  "applies_to": "ROA",
-  "template_id": "alpha_roa_v1",
   "required_evidence": [
     {
       "key": "consent_present",
@@ -17,5 +15,7 @@
       "label": "Supporting documents attached",
       "required": true
     }
-  ]
+  ],
+  "template_id": "alpha_roa_v1",
+  "applies_to": "ROA"
 }

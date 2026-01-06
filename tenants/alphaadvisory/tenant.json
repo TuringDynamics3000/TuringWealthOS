@@ -1,45 +1,32 @@
 {
-  "terminology": {
-    "advice_file_types": {
-      "Other": "Advice File",
-      "Review": "Review",
-      "ROA": "Record of Advice",
-      "SOA": "Statement of Advice"
-    }
+  "slas": {
+    "draft_to_review_days": 7,
+    "reviewed_to_authorised_days": 3,
+    "authorised_to_issued_days": 2
   },
+  "tenant_name": "AlphaAdvisory Co",
   "tenant_id": "alphaadvisory",
+  "tenant_type": "advisor_practice",
   "ui_defaults": {
     "groups_workspace_visible_only_if_groupId_exists": true,
     "groups_module_enabled": true,
     "household_always_present": true
   },
+  "branding": {
+    "logo_path": "tenants/alphaadvisory/brand/logo.svg",
+    "display_name": "AlphaAdvisory Co",
+    "accent_hex": "#1F4B99"
+  },
+  "terminology": {
+    "advice_file_types": {
+      "Other": "Advice File",
+      "ROA": "Record of Advice",
+      "SOA": "Statement of Advice",
+      "Review": "Review"
+    }
+  },
+  "created_utc": "2026-01-06T19:44:11Z",
   "permissions": {
-    "roles": {
-      "Principal": [],
-      "Compliance": [
-        "Audit",
-        "GenerateAuditPack",
-        "VerifyNotary"
-      ],
-      "Adviser": [
-        "Prepare",
-        "Authorise",
-        "Issue",
-        "CreateAdviceFile"
-      ],
-      "Paraplanner": [
-        "Prepare"
-      ],
-      "Admin": [
-        "Prepare",
-        "Authorise",
-        "Issue",
-        "Audit",
-        "GenerateAuditPack",
-        "VerifyNotary",
-        "CreateAdviceFile"
-      ]
-    },
     "actions": [
       "Prepare",
       "Authorise",
@@ -48,19 +35,32 @@
       "GenerateAuditPack",
       "VerifyNotary",
       "CreateAdviceFile"
-    ]
-  },
-  "tenant_type": "advisor_practice",
-  "tenant_name": "AlphaAdvisory Co",
-  "created_utc": "2026-01-06T18:58:47Z",
-  "branding": {
-    "display_name": "AlphaAdvisory Co",
-    "accent_hex": "#1F4B99",
-    "logo_path": "tenants/alphaadvisory/brand/logo.svg"
-  },
-  "slas": {
-    "draft_to_review_days": 7,
-    "reviewed_to_authorised_days": 3,
-    "authorised_to_issued_days": 2
+    ],
+    "roles": {
+      "Admin": [
+        "Prepare",
+        "Authorise",
+        "Issue",
+        "Audit",
+        "GenerateAuditPack",
+        "VerifyNotary",
+        "CreateAdviceFile"
+      ],
+      "Paraplanner": [
+        "Prepare"
+      ],
+      "Adviser": [
+        "Prepare",
+        "Authorise",
+        "Issue",
+        "CreateAdviceFile"
+      ],
+      "Compliance": [
+        "Audit",
+        "GenerateAuditPack",
+        "VerifyNotary"
+      ],
+      "Principal": []
+    }
   }
 }
