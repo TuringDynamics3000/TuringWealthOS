@@ -1,5 +1,9 @@
 ﻿Advisor Tenant (Production)
 
-- Tenant = AFSL-holding advice business
+Tenant = Licensed advice business (AFSL holder)
+
+Invariants:
+- Platform does NOT give advice
 - Adviser is sole decision authority
-- System enforces evidence, audit, and process
+- System enforces evidence, process, and auditability
+- No execution, no optimisation, no recommendations
