@@ -1,21 +1,21 @@
 {
+  "applies_to": "ROA",
   "required_evidence": [
     {
+      "required": true,
       "key": "consent_present",
-      "label": "Client consent recorded",
-      "required": true
+      "label": "Client consent recorded"
     },
     {
+      "required": true,
       "key": "scope_statement",
-      "label": "Scope statement captured",
-      "required": true
+      "label": "Scope statement captured"
     },
     {
+      "required": true,
       "key": "supporting_docs",
-      "label": "Supporting documents attached",
-      "required": true
+      "label": "Supporting documents attached"
     }
   ],
-  "template_id": "alpha_roa_v1",
-  "applies_to": "ROA"
+  "template_id": "alpha_roa_v1"
 }

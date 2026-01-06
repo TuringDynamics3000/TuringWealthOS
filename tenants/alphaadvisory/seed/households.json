@@ -1,29 +1,29 @@
 {
   "households": [
     {
+      "createdAt": "2026-01-06T00:00:00Z",
       "householdId": "HH-001",
-      "name": "Morgan Household",
-      "createdAt": "2026-01-06T00:00:00Z"
+      "name": "Morgan Household"
     },
     {
+      "createdAt": "2026-01-06T00:00:00Z",
       "householdId": "HH-002",
-      "name": "Singh Household",
-      "createdAt": "2026-01-06T00:00:00Z"
+      "name": "Singh Household"
     },
     {
+      "createdAt": "2026-01-06T00:00:00Z",
       "householdId": "HH-003",
-      "name": "Chen Household",
-      "createdAt": "2026-01-06T00:00:00Z"
+      "name": "Chen Household"
     },
     {
+      "createdAt": "2026-01-06T00:00:00Z",
       "householdId": "HH-004",
-      "name": "Harper Household",
-      "createdAt": "2026-01-06T00:00:00Z"
+      "name": "Harper Household"
     },
     {
+      "createdAt": "2026-01-06T00:00:00Z",
       "householdId": "HH-005",
-      "name": "Solo Household",
-      "createdAt": "2026-01-06T00:00:00Z"
+      "name": "Solo Household"
     }
   ]
 }

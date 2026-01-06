@@ -1,16 +1,16 @@
 {
   "groups": [
     {
-      "groupId": "GRP-001",
-      "name": "Harper Group",
+      "createdAt": "2026-01-06T00:00:00Z",
       "type": "family_office",
-      "createdAt": "2026-01-06T00:00:00Z"
+      "groupId": "GRP-001",
+      "name": "Harper Group"
     },
     {
-      "groupId": "GRP-002",
-      "name": "Chen Group",
+      "createdAt": "2026-01-06T00:00:00Z",
       "type": "business_owner_group",
-      "createdAt": "2026-01-06T00:00:00Z"
+      "groupId": "GRP-002",
+      "name": "Chen Group"
     }
   ]
 }

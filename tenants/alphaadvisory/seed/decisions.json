@@ -1,36 +1,36 @@
 {
   "decisions": [
     {
-      "authorUserId": "USR-ADV-001",
+      "label": "Scope confirmed",
+      "decisionId": "DE-001",
       "createdAt": "2026-01-06T00:00:00Z",
-      "rationale": "Scope recorded by adviser. Evidence referenced.",
-      "adviceFileId": "AF-002",
       "evidenceRefs": [
         "EV-001",
         "EV-002"
       ],
-      "label": "Scope confirmed",
-      "decisionId": "DE-001"
+      "adviceFileId": "AF-002",
+      "rationale": "Scope recorded by adviser. Evidence referenced.",
+      "authorUserId": "USR-ADV-001"
     },
     {
-      "authorUserId": "USR-ADV-002",
-      "createdAt": "2026-01-06T00:00:00Z",
-      "rationale": "Objectives captured and linked to evidence where available.",
-      "adviceFileId": "AF-003",
-      "evidenceRefs": [],
       "label": "Client objectives recorded",
-      "decisionId": "DE-002"
+      "decisionId": "DE-002",
+      "createdAt": "2026-01-06T00:00:00Z",
+      "evidenceRefs": [],
+      "adviceFileId": "AF-003",
+      "rationale": "Objectives captured and linked to evidence where available.",
+      "authorUserId": "USR-ADV-002"
     },
     {
-      "authorUserId": "USR-ADV-002",
+      "label": "Authorisation completed",
+      "decisionId": "DE-003",
       "createdAt": "2026-01-06T00:00:00Z",
-      "rationale": "Adviser authorisation recorded. Audit pack generated on issue.",
-      "adviceFileId": "AF-004",
       "evidenceRefs": [
         "EV-003"
       ],
-      "label": "Authorisation completed",
-      "decisionId": "DE-003"
+      "adviceFileId": "AF-004",
+      "rationale": "Adviser authorisation recorded. Audit pack generated on issue.",
+      "authorUserId": "USR-ADV-002"
     }
   ]
 }

@@ -1,0 +1,8 @@
+# Node / Next.js
+node_modules/
+.next/
+
+# Local demo & notarisation artefacts
+audit_exports/AF-*/
+audit_notary/
+

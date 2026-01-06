@@ -1,26 +1,26 @@
 {
+  "applies_to": "Review",
   "required_evidence": [
     {
+      "required": true,
       "key": "consent_present",
-      "label": "Client consent recorded",
-      "required": true
+      "label": "Client consent recorded"
     },
     {
+      "required": true,
       "key": "fact_find",
-      "label": "Fact find captured",
-      "required": true
+      "label": "Fact find captured"
     },
     {
+      "required": true,
       "key": "income_expense",
-      "label": "Income/expense evidence",
-      "required": true
+      "label": "Income/expense evidence"
     },
     {
+      "required": true,
       "key": "portfolio_statement",
-      "label": "Portfolio statement(s) attached",
-      "required": true
+      "label": "Portfolio statement(s) attached"
     }
   ],
-  "template_id": "alpha_review_v1",
-  "applies_to": "Review"
+  "template_id": "alpha_review_v1"
 }

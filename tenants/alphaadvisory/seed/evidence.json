@@ -2,47 +2,47 @@
   "evidence": [
     {
       "evidenceId": "EV-001",
-      "capturedByUserId": "USR-PARA-001",
       "kind": "Consent",
-      "filename": "consent.pdf",
       "source": "upload",
-      "createdAt": "2026-01-06T00:00:00Z",
+      "capturedByUserId": "USR-PARA-001",
       "linked": {
-        "clientId": "CL-001",
         "adviceFileIds": [
           "AF-001",
           "AF-002"
-        ]
-      }
+        ],
+        "clientId": "CL-001"
+      },
+      "createdAt": "2026-01-06T00:00:00Z",
+      "filename": "consent.pdf"
     },
     {
       "evidenceId": "EV-002",
-      "capturedByUserId": "USR-PARA-001",
       "kind": "Document",
-      "filename": "portfolio_statement.pdf",
       "source": "upload",
-      "createdAt": "2026-01-06T00:00:00Z",
+      "capturedByUserId": "USR-PARA-001",
       "linked": {
-        "clientId": "CL-001",
         "adviceFileIds": [
           "AF-002"
-        ]
-      }
+        ],
+        "clientId": "CL-001"
+      },
+      "createdAt": "2026-01-06T00:00:00Z",
+      "filename": "portfolio_statement.pdf"
     },
     {
       "evidenceId": "EV-003",
-      "capturedByUserId": "USR-PARA-002",
       "kind": "Document",
-      "filename": "group_structure.pdf",
       "source": "upload",
-      "createdAt": "2026-01-06T00:00:00Z",
+      "capturedByUserId": "USR-PARA-002",
       "linked": {
         "adviceFileIds": [
           "AF-004"
         ],
-        "groupId": "GRP-001",
-        "clientId": "CL-004"
-      }
+        "clientId": "CL-004",
+        "groupId": "GRP-001"
+      },
+      "createdAt": "2026-01-06T00:00:00Z",
+      "filename": "group_structure.pdf"
     }
   ]
 }

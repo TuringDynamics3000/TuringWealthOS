@@ -1,40 +1,40 @@
 {
   "users": [
     {
-      "userId": "USR-ADV-001",
+      "name": "Adviser One",
       "email": "adviser1@alphaadvisory.example",
-      "role": "Adviser",
-      "name": "Adviser One"
+      "userId": "USR-ADV-001",
+      "role": "Adviser"
     },
     {
-      "userId": "USR-ADV-002",
+      "name": "Adviser Two",
       "email": "adviser2@alphaadvisory.example",
-      "role": "Adviser",
-      "name": "Adviser Two"
+      "userId": "USR-ADV-002",
+      "role": "Adviser"
     },
     {
-      "userId": "USR-PARA-001",
+      "name": "Para One",
       "email": "para1@alphaadvisory.example",
-      "role": "Paraplanner",
-      "name": "Para One"
+      "userId": "USR-PARA-001",
+      "role": "Paraplanner"
     },
     {
-      "userId": "USR-PARA-002",
+      "name": "Para Two",
       "email": "para2@alphaadvisory.example",
-      "role": "Paraplanner",
-      "name": "Para Two"
+      "userId": "USR-PARA-002",
+      "role": "Paraplanner"
     },
     {
-      "userId": "USR-COMP-001",
+      "name": "Compliance One",
       "email": "compliance@alphaadvisory.example",
-      "role": "Compliance",
-      "name": "Compliance One"
+      "userId": "USR-COMP-001",
+      "role": "Compliance"
     },
     {
-      "userId": "USR-ADMIN-001",
+      "name": "Admin One",
       "email": "admin@alphaadvisory.example",
-      "role": "Admin",
-      "name": "Admin One"
+      "userId": "USR-ADMIN-001",
+      "role": "Admin"
     }
   ]
 }
